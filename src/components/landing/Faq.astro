@@ -1,0 +1,311 @@
+<section>
+  <div class="py-24 h-full px-8 md:px-12 lg:px-32 max-w-7xl mx-auto">
+    <div class="lg:gap-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div class="text-center lg:text-left">
+        <div>
+          <p class="text-4xl font-semibold tracking-tighter text-zinc-900">
+            Frequent questions and answers
+          </p><p class="tmt-4 text-base text-zinc-500">
+            Answers to commonly asked questions about our platform
+          </p>
+        </div>
+      </div><div
+        class="w-full mx-auto relative font-normal lg:col-span-2"
+        x-data="{
+  activeAccordion: '',
+  setActiveAccordion(id) {
+  this.activeAccordion = (this.activeAccordion == id) ? '' : id
+  }
+  }">
+        <div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>How do I manage my account?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              You can manage your account on the 'My account' page to change
+              billing details or see your license key(s). You can also cancel
+              your subscription there at any time. If you cancel your
+              subscription, you will still have access to spotless until the end
+              of your current billing period. Go to the My Account page
+            </div>
+          </div>
+        </div><div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span
+              >I already bought spotless. Where is my license key?
+            </span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              If correct, you've received an email after your purchase that
+              includes your license key. The subject line is 'Your spotless
+              license key'. If you cannot find your license key, please send an
+              email to info@spotless.com and I'll help you out.
+            </div>
+          </div>
+        </div><div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>Is spotless going to have a Firefox version?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              I would love to build a Firefox version of spotless. It is
+              important for me, however, that I can offer a great experience for
+              all users. And for that I need to invest a lot of time. If you are
+              interested in a Firefox version, let me know!
+            </div>
+          </div>
+        </div><div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>Does spotless work on any website?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              Yes, spotless works on any website. If the website does not use
+              Tailwind CSS, there are no classes visible for any element.
+              However, you can still add Tailwind classes to elements.
+            </div>
+          </div>
+        </div><div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>Do you have a refund policy?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              If you are not satisfied with spotless, you can email your refund
+              request to info@spotless.com. We accept requests up to 14 days
+              after purchase. It would help a lot if you also provide feedback
+              as to why you'd like a refund, so I can make the product better
+              for others in the future!
+            </div>
+          </div>
+        </div><div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span
+              >Is there a trial? Can I try it before I buy spotless?
+            </span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              Yes, you can try spotless! We don't have a trial but you can use
+              spotless on this website by clicking on the link below. Hit the
+              space key to pin spotless.
+            </div>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>spotless says my license key is invalid?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              Oops! If you've made sure the license key is correct (check for
+              spaces before/after the key when copy-pasting), please send an
+              email to info@spotless.com and I'll help you out.
+            </div>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span>How often is there an update for spotless?</span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              spotless will receive periodic updates when Tailwind CSS is
+              updated, and when there is a new set of features ready for
+              spotless. I hope to release a new version with new features every
+              4-8 weeks.
+            </div>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer group text-gray-600 hover:text-zinc-500"
+          x-data="{ id: $id('accordion') }"
+          :class="{ 'text-zinc-900': activeAccordion==id, 'text-gray-600 hover:text-zinc-500': activeAccordion!=id }">
+          <button
+            class="flex items-center justify-between p-4 pb-1 select-none text-left w-full text-sm lg:text-base"
+            @click="setActiveAccordion(id)"
+            ><span
+              >Do you have bundled license packs? I want multiple!
+            </span><svg
+              class="h-5 w-5 duration-300 ease-out text-zinc-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-width="1.5"
+              :class="{ '-rotate-[45deg]': activeAccordion==id }"
+              ><path
+                d="M12 6v12m6-6H6"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path></svg
+            ></button
+          ><div
+            x-collapse=""
+            x-show="activeAccordion==id"
+            style="display: none;">
+            <div class="text-gray-500 p-4 pt-2 text-sm">
+              Yes absolutely! You can buy a 5-pack, 10-pack, 25-pack or custom
+              amount (25+) license. if you're interested, please send an email
+              to info@spotless.com. If you want less than 5 licenses, you can
+              simply change the quantity during the normal checkout.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
